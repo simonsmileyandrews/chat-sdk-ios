@@ -35,6 +35,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *googleButton;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *resetPasswordButton;
+
 @property (nonatomic, readwrite, weak) id<ElmLoginViewDelegate> delegate;
 
 -(void) showHUD: (NSString *) message;

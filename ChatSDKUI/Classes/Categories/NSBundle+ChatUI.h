@@ -157,6 +157,13 @@
 #define bBlock @"bBlock"
 #define bUnblock @"bUnblock"
 
+#define bResetPassword @"bResetPassword"
+#define bPasswordResetSuccessfully @"bPasswordResetSuccessfully"
+#define bPasswordResetFailure @"bPasswordResetFailure"
+#define bCantSignInForgotYourPassword @"bCantSignInForgotYourPassword"
+#define bEnterYourEmailAddressToResetPassword @"bEnterYourEmailAddressToResetPassword"
+#define bEmailError @"bEmailError"
+
 @interface NSBundle (ChatUI)
 
 +(NSBundle *) chatUIBundle;

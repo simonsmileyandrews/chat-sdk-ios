@@ -28,6 +28,7 @@
 @synthesize facebookButton;
 @synthesize twitterButton;
 @synthesize googleButton;
+@synthesize resetPasswordButton;
 
 @synthesize delegate;
 
@@ -73,6 +74,8 @@
 //    }
 
     anonymousButton.hidden = !anonymousButton.enabled;
+    
+    [resetPasswordButton setTitle:[NSBundle t: bResetPassword] forState:UIControlStateNormal];
     
     [self updateButtonStateForInternetConnection];
 }
@@ -197,6 +200,12 @@
         [self showHUD];
         [self handleLoginAttempt:[delegate anonymous]];
     }
+}
+
+- (IBAction)resetPasswordButtonPressed:(id)sender {
+    BForgotPasswordViewController * vc = [[BForgotPasswordViewController alloc] init];
+    UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nvc animated:YES completion:nil];
 }
 
 - (IBAction)termsAndConditionsButtonPressed:(id)sender {

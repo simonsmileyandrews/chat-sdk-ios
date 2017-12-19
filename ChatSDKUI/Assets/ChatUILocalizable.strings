@@ -153,4 +153,9 @@
 
 "" = "";
 
-
+"bResetPassword" = "Reset Password";
+"bPasswordResetSuccessfully" = "Password reset successfully!";
+"bPasswordResetFailure" = "Password reset failed - check your email was added correctly and try again";
+"bCantSignInForgotYourPassword" = "Can't sign in? \nForgot your password?";
+"bEnterYourEmailAddressToResetPassword" = "Enter your email address below and we'll send you password reset instructions.";
+"bEmailError" = "Email error - make sure you have enterred your email in a valid format";
